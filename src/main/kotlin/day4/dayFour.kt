@@ -9,13 +9,13 @@ fun main() {
     val loadedData = File(filePath).readLines()
     var lineNumber = 0
     var output = 0
-    val validInput = setOf('X','M','A','S')
+    val validInput = setOf('X', 'M', 'A', 'S')
 
     loadedData.forEach { line ->
         val slicedLine = line.toCharArray()
         var counter = 0
         slicedLine.forEach { letter ->
-            if(letter in validInput) {
+            if (letter in validInput) {
 
 
                 if (line.length >= counter + 4) {               // horizontal search im going insane
