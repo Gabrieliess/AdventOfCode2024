@@ -1,10 +1,10 @@
-package dayOne
+package day1
 
 import java.io.File
 
 fun main() {
 
-    val filePath = "src/main/kotlin/dayOne/dayOneData.txt"
+    val filePath = "src/main/kotlin/day1/dayOneData.txt"
     val loadedData = File(filePath).readLines()
 
     val firstRow = mutableListOf<Long>()
