@@ -1,1 +1,1 @@
-Just to clear things out, I'm not even trying to make these code look pretty or efficient, if you will ever need an example of bad code feel free to copy one of these here. This repo is definition of how you should not code 
+Just to clear things out, I'm not even trying to make these codes look pretty or efficient, if you will ever need an example of bad code feel free to adress one of these here. This repo is definition of how you should not code 
