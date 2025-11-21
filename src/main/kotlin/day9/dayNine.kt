@@ -4,7 +4,7 @@ import java.io.File
 import java.util.Collections
 
 const val filePath = "src/main/kotlin/day9/dayNineData.txt"
-var checkSum:Long = 0
+var checkSum: Long = 0
 fun main() {
     val loadedData = File(filePath).readText()
     var modifiedData = mutableListOf<String>()
@@ -21,17 +21,17 @@ fun main() {
         counter++
     }
 
-    for (i in 1..modifiedData.count { it.isEmpty() }){      // like 13,000ms runtime god help me
+    for (i in 1..modifiedData.count { it.isEmpty() }) {      // like 13,000ms runtime god help me
         Collections.swap(modifiedData, modifiedData.indexOf(""), modifiedData.indexOfLast { it.isNotEmpty() })
     }
 
     counter = 0
     modifiedData.filter { it.isNotEmpty() }
     modifiedData.forEach { number ->
-        if(number.isNotEmpty()){
+        if (number.isNotEmpty()) {
             checkSum += counter * number.toLong()
         }
         counter++
     }
-    println(checkSum/2)
+    println(checkSum / 2)
 }
